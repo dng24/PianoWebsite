@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Waldteufel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar(); videoID(['skatersWaltzIframe']);" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div class="compTitle">
+      <br><br><br><br><br><br>
+      <h1>Waldteufel</h1>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    <!--The main content-->
+    <div id="mainContent">
+      <p>Émile Waldteufel</p>
+      <p>Romantic Period</p>
+      <p>Born: December 9, 1837 in Strasbourg, France</p>
+      <p>Died: February 12, 1915 in Paris, France</p>
+      <button onclick="showModal('skatersWaltzModal');">The Skaters Waltz</button>
+      <br><br><br><br>
+    </div>
+
+    <!--The pop up box with info-->
+    <div id="skatersWaltzModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('skatersWaltzModal');">&times;</span>
+        <h3>The Skaters Waltz</h3>
+        <p>Composer: Waldteufel</p>
+        <p>Period: Romantic</p>
+        <p>Date Composed: 1882</p>
+        <p>Derek Ng (recorded 6/6/12):</p>
+        <iframe id="skatersWaltzIframe" src="https://www.youtube.com/embed/p5ZrNV1GWXE?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>

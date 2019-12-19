@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Clementi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar(); videoID(['sonatina1Iframe', 'sonatina2Iframe', 'sonatina3Iframe', 'sonatina3Iframe1', 'sonatina4Iframe', 'sonatina6Iframe', 'sonatina6Iframe1']);" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div class="compTitle">
+      <br><br><br><br><br><br>
+      <h1>Clementi</h1>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+    <!--The main content-->
+    <div id="mainContent">
+      <p>Muzio Clementi</p>
+      <p>Classical Period</p>
+      <p>Born: January 24, 1752 in Rome, Italy</p>
+      <p>Died: March 10, 1832 in Evesham, United Kingdom</p>
+      <button onclick="showModal('sonatina1Modal');">Sonatina Op. 36, No. 1</button>
+      <br><br>
+      <button onclick="showModal('sonatina2Modal');">Sonatina Op. 36, No. 2</button>
+      <br><br>
+      <button onclick="showModal('sonatina3Modal');">Sonatina Op. 36, No. 3</button>
+      <br><br>
+      <button onclick="showModal('sonatina4Modal');">Sonatina Op. 36, No. 4</button>
+      <br><br>
+      <button onclick="showModal('sonatina6Modal');">Sonatina Op. 36, No. 6</button>
+      <br><br>
+      <br><br><br><br>
+    </div>
+
+    <!--The pop up box with info-->
+    <div id="sonatina1Modal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonatina1Modal');">&times;</span>
+        <h3>Sonatina Op. 36, No. 1</h3>
+        <p>Composer: Clementi</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1797</p>
+        <p>Diane Hidy:</p>
+        <iframe id="sonatina1Iframe" src="https://www.youtube.com/embed/PUo1zoKbtUg?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonatina2Modal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonatina2Modal');">&times;</span>
+        <h3>Sonatina Op. 36, No. 2</h3>
+        <p>Composer: Clementi</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1797</p>
+        <p>Diane Hidy:</p>
+        <iframe id="sonatina2Iframe" src="https://www.youtube.com/embed/eJI10HzoS3Y?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonatina3Modal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonatina3Modal');">&times;</span>
+        <h3>Sonatina Op. 36, No. 3</h3>
+        <p>Composer: Clementi</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1797</p>
+        <p>Derek Ng (1st mvmt recorded 6/12/13):</p>
+        <iframe id="sonatina3Iframe" src="https://www.youtube.com/embed/GpYUxhprXGw?enablejsapi=1" allowfullscreen></iframe>
+        <p>Diane Hidy:</p>
+        <iframe id="sonatina3Iframe1" src="https://www.youtube.com/embed/PmD2GPUi_90?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonatina4Modal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonatina4Modal');">&times;</span>
+        <h3>Sonatina Op. 36, No. 4</h3>
+        <p>Composer: Clementi</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1797</p>
+        <p>Diane Hidy:</p>
+        <iframe id="sonatina4Iframe" src="https://www.youtube.com/embed/7_YYQMv_96Q?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonatina6Modal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonatina6Modal');">&times;</span>
+        <h3>Sonatina Op. 36, No. 6</h3>
+        <p>Composer: Clementi</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1797</p>
+        <p>Derek Ng (1st mvmt recorded 6/16/14):</p>
+        <iframe id="sonatina6Iframe" src="https://www.youtube.com/embed/ZPoqrFjtizw?enablejsapi=1" allowfullscreen></iframe>
+        <p>Diane Hidy:</p>
+        <iframe id="sonatina6Iframe1" src="https://www.youtube.com/embed/hzFxrfs5atY?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>

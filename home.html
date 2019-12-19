@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar();" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div id="homeTitle" class="compTitle">
+      <h1>Welcome!<br><a href="#arrow"><img src="arrow.png"></a></h1>
+    </div>
+
+    <!--The main content-->
+    <div id="mainContent">
+      <h3 id="arrow">Composers</h3>
+      <div id="bigDiv">
+  			<div id="icons">
+  				<p>Bach</p>
+  				<a href="bach.html"><img src="bach.jpg" alt="Bach"></a> <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/260px-Johann_Sebastian_Bach.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='bach.html'" />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Beethoven</p>
+  				<a href="beethoven.html"><img src="beethoven.jpg" alt="Beethoven"></a> <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/800px-Beethoven.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='beethoven.html'" />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Chopin</p>
+  				<a href="chopin.html"><img src="chopin.jpg" alt="Chopin"></a> <!-- https://upload.wikimedia.org/wikipedia/commons/f/f5/Eug%C3%A8ne_Ferdinand_Victor_Delacroix_043.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='chopin.html'"  />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Clementi</p>
+  				<a href="clementi.html"><img src="clementi.jpeg" alt="Clementi"></a> <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Muzio_Clementi.jpeg/220px-Muzio_Clementi.jpeg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='clementi.html'" />
+  				</form>
+  			</div>
+  		</div>
+  		<div id="bigDiv">
+  			<div id="icons">
+  				<p>Debussy</p>
+  				<a href="debussy.html"><img src="debussy.jpg" alt="Debussy"></a> <!-- http://kidsvillenews.com/wp-content/uploads/2015/01/cultural-207x300.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='debussy.html'" />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Dennée</p>
+  				<a href="dennée.html"><img src="dennee.jpg" alt="Dennée"></a> <!-- https://cdn.shopify.com/s/files/1/1021/8371/products/XMA5_171.jpg?v=1493301980 -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='dennée.html'"  />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Durand</p>
+  				<a href="durand.html"><img src="durand.PNG" alt="Durand"></a> <!-- https://www.cairn.info/loadimg.php?FILE=RBNF/RBNF_046/RBNF_046_0010/RBNF_id9782717725964_pu2014-01s_sa03_art03_img002.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='durand.html'"  />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Grieg</p>
+  				<a href="grieg.html"><img src="grieg.jpg" alt="Grieg"></a> <!-- https://klimbim2014.files.wordpress.com/2016/09/edvard-grieg.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='grieg.html'" />
+  				</form>
+  			</div>
+  		</div>
+      <div id="bigDiv">
+  			<div id="icons">
+  				<p>Haydn</p>
+  				<a href="haydn.html"><img src="haydn.jpg" alt="Haydn"></a> <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Joseph_Haydn.jpg/220px-Joseph_Haydn.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='haydn.html'" />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Ibert</p>
+  				<a href="ibert.html"><img src="ibert.jpg" alt="Ibert"></a> <!-- https://www.esm.rochester.edu/uploads/Jacques_Ibert.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='ibert.html'" />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Lecuona</p>
+  				<a href="lecuona.html"><img src="lecuona.jpg" alt="Lecuona"></a> <!-- https://cps-static.rovicorp.com/3/JPG_400/MI0002/864/MI0002864486.jpg?partner=allrovi.com -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='lecuona.html'"  />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Mozart</p>
+  				<a href="mozart.html"><img src="mozart.jpg" alt="Mozart"></a> <!-- https://upload.wikimedia.org/wikipedia/commons/1/1e/Wolfgang-amadeus-mozart_1.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='mozart.html'" />
+  				</form>
+  			</div>
+  		</div>
+  		<div id="bigDiv">
+        <div id="icons">
+          <p>Reinhold</p>
+          <a href="reinhold.html"><img src="reinhold.jpg" alt="Reinhold"></a>
+          <br>
+          <form>
+            <input type="button" value="Pieces" onclick="window.location.href='reinhold.html'" />
+          </form>
+        </div>
+  			<div id="icons">
+  				<p>Schubert</p>
+  				<a href="schubert.html"><img src="schubert.jpg" alt="Schubert"></a> <!-- https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Franz_Schubert_by_Wilhelm_August_Rieder_1875.jpg/220px-Franz_Schubert_by_Wilhelm_August_Rieder_1875.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='schubert.html'" />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Schumann</p>
+  				<a href="schumann.html"><img src="schumann.jpg" alt="Schumann"></a> <!-- http://en.chopin.nifc.pl/=files/foto/1/793/o/1582712.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='schumann.html'"  />
+  				</form>
+  			</div>
+        <div id="icons">
+  				<p>Strauss</p>
+  				<a href="strauss.html"><img src="strauss.jpg" alt="Strauss"></a> <!-- http://www.steveartgallery.se/upload1/file-admin/images/new21/ignaz%20moscheles-994938.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='strauss.html'"  />
+  				</form>
+  			</div>
+      </div>
+      <div id="bigDiv">
+        <div id="icons">
+  				<p>Waldteufel</p>
+  				<a href="waldteufel.html"><img src="waldteufel.jpg" alt="Waldteufel"></a> <!-- https://www.cmuse.org/wp-content/uploads/2015/12/Emile-Waldteufel.jpg -->
+  				<br>
+  				<form>
+  					<input type="button" value="Pieces" onclick="window.location.href='waldteufel.html'" />
+  				</form>
+  			</div>
+  		</div>
+    </div>
+
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>

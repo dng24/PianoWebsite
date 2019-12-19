@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Mozart</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar(); videoID(['allaTurcaIframe', 'allaTurcaIframe1', 'sonataCMaIframe', 'sonataCMaIframe1']);" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div class="compTitle">
+      <br><br><br><br><br><br>
+      <h1>Mozart</h1>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    <!--The main content-->
+    <div id="mainContent">
+      <p>Wolfgang Amadeus Mozart</p>
+      <p>Classical Period</p>
+      <p>Born: January 27, 1756 in Salzburg, Austria</p>
+      <p>Died: December 5, 1791 in Vienna, Austria</p>
+      <button onclick="showModal('allaTurcaModal');">Rondo Alla Turca</button>
+      <br><br>
+      <button onclick="showModal('sonataCMaModal');">Sonata in C Major</button>
+      <br><br><br><br>
+    </div>
+
+    <!--The pop up box with info-->
+    <div id="allaTurcaModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('allaTurcaModal');">&times;</span>
+        <h3>Rondo Alla Turca</h3>
+        <p>Composer: Mozart</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1783</p>
+        <p>Lars Roos:</p>
+        <iframe id="allaTurcaIframe" src="https://www.youtube.com/embed/geER3iQDO5k?enablejsapi=1" allowfullscreen></iframe>
+        <p>Lang Lang:</p>
+        <iframe id="allaTurcaIframe1" src="https://www.youtube.com/embed/MF7U1QYS1zE?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonataCMaModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonataCMaModal');">&times;</span>
+        <h3>Sonata in C Major</h3>
+        <p>Composer: Mozart</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1788</p>
+        <p>Derek Ng (recorded 6/10/15):</p>
+        <iframe id="sonataCMaIframe" src="https://www.youtube.com/embed/AkMceUbrZA8?enablejsapi=1" allowfullscreen></iframe>
+        <p>Daniel Barenboim:<br><a href="https://www.youtube.com/watch?v=1vDxlnJVvW8" target="_blank">https://youtu.be/1vDxlnJVvW8</a></p>
+        <p>Paul Barton:</p>
+        <iframe id="sonataCMaIframe1" src="https://www.youtube.com/embed/QjIrhh3TvXw?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>

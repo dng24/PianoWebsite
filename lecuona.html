@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Lecuona</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar(); videoID(['malaguenaIframe', 'malaguenaIframe1']);" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div class="compTitle">
+      <br><br><br><br><br><br>
+      <h1>Lecuona</h1>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    <!--The main content-->
+    <div id="mainContent">
+      <p>Ernesto Lecuona</p>
+      <p>Modern Period</p>
+      <p>Born: August 6, 1895 in Havana, Cuba</p>
+      <p>Died: November 29, 1963 in Santa Cruz de Tenerife, Spain</p>
+      <button onclick="showModal('malaguenaModal');">Malagueña</button>
+      <br><br><br><br>
+    </div>
+
+    <!--The pop up box with info-->
+    <div id="malaguenaModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('malaguenaModal');">&times;</span>
+        <h3>Malagueña</h3>
+        <p>Composer: Lecuona</p>
+        <p>Period: Modern</p>
+        <p>Date Composed: 1928</p>
+        <p>Derek Ng (recorded 5/31/18):</p>
+        <iframe id="malaguenaIframe" src="https://www.youtube.com/embed/kkYuco-bfuU?enablejsapi=1" allowfullscreen></iframe>
+        <p>Anat Navarro:</p>
+        <iframe id="malaguenaIframe1" src="https://www.youtube.com/embed/k4Ii-RZDj2c?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>

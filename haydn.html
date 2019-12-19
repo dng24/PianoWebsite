@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Haydn</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar(); videoID(['gipsyRondoIframe', 'gipsyRondoIframe1', 'sonataDMaIframe']);" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div class="compTitle">
+      <br><br><br><br><br><br>
+      <h1>Haydn</h1>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    <!--The main content-->
+    <div id="mainContent">
+      <p>Joseph Haydn</p>
+      <p>Classical Period</p>
+      <p>Born: March 31, 1732 in Rohrau, Austria</p>
+      <p>Died: May 31, 1809 in Vienna, Austria</p>
+      <button onclick="showModal('gipsyRondoModal');">Gipsy Rondo</button>
+      <br><br>
+      <button onclick="showModal('sonataDMaModal');">Sonata No. 7 in D Major</button>
+      <br><br><br><br>
+    </div>
+
+    <!--The pop up box with info-->
+    <div id="gipsyRondoModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('gipsyRondoModal');">&times;</span>
+        <h3>Gipsy Rondo</h3>
+        <p>Composer: Haydn</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1795</p>
+        <p>Derek Ng (recorded 6/14/17):</p>
+        <iframe id="gipsyRondoIframe" src="https://www.youtube.com/embed/zpUACONmreM?enablejsapi=1" allowfullscreen></iframe>
+        <p>Alexei Knueffer:</p>
+        <iframe id="gipsyRondoIframe1" src="https://www.youtube.com/embed/HMKV7D0qBuY?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonataDMaModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonataDMaModal');">&times;</span>
+        <h3>Sonata No. 7 in D Major</h3>
+        <p>Composer: Haydn</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1780?</p>
+        <p>Ilya Yakushev:</p>
+        <iframe id="sonataDMaIframe" src="https://www.youtube.com/embed/WA1_fxpeEYU?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>

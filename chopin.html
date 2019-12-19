@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Chopin</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar(); videoID(['mazurkaFMaIframe', 'nocturneEFlatIframe', 'nocturneEFlatIframe1', 'waltzAMiIframe']);" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div class="compTitle">
+      <br><br><br><br><br><br>
+      <h1>Chopin</h1>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    <!--The main content-->
+    <div id="mainContent">
+      <p>Frédéric Chopin</p>
+      <p>Romantic Period</p>
+      <p>Born: March 1, 1810 in Żelazowa Wola, Poland</p>
+      <p>Died: October 17, 1849 in Paris, France</p>
+      <button onclick="showModal('mazurkaFMaModal');">Mazurka in F Major, Op. 68, No. 3</button>
+      <br><br>
+      <button onclick="showModal('nocturneEFlatModal');">Nocturne in E-Flat Major, Op. 9, No. 2</button>
+      <br><br>
+      <button onclick="showModal('waltzAMiModal');">Waltz in A Minor</button>
+      <br><br>
+      <button onclick="showModal('waltzEMiModal');">Waltz in E Minor, Op. posth</button>
+      <br><br><br><br>
+    </div>
+
+    <!--The pop up box with info-->
+    <div id="mazurkaFMaModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('mazurkaFMaModal');">&times;</span>
+        <h3>Mazurka in F Major, Op. 68, No. 3</h3>
+        <p>Composer: Chopin</p>
+        <p>Period: Romantic</p>
+        <p>Date Composed: 1829</p>
+        <p>Alan Huckleberry:</p>
+        <iframe id="mazurkaFMaIframe" src="https://www.youtube.com/embed/u35oHGlgOns?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="nocturneEFlatModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('nocturneEFlatModal');">&times;</span>
+        <h3>Nocturne in E-Flat Major, Op. 9, No. 2</h3>
+        <p>Composer: Chopin</p>
+        <p>Period: Romantic</p>
+        <p>Date Composed: 1830-1832</p>
+        <p>Derek Ng (recorded 5/31/18):</p>
+        <iframe id="nocturneEFlatIframe" src="https://www.youtube.com/embed/YMT26lvObLQ?enablejsapi=1" allowfullscreen></iframe>
+        <p>Valentina Lisitsa:</p>
+        <iframe id="nocturneEFlatIframe1" src="https://www.youtube.com/embed/tV5U8kVYS88?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="waltzAMiModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('waltzAMiModal');">&times;</span>
+        <h3>Waltz in A Minor</h3>
+        <p>Composer: Chopin</p>
+        <p>Period: Romantic</p>
+        <p>Date Composed: 1843</p>
+        <p>Paul Barton:</p>
+        <iframe id="waltzAMiIframe" src="https://www.youtube.com/embed/HtQRpmaaiCo?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="waltzEMiModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('waltzEMiModal');">&times;</span>
+        <h3>Waltz in E Minor, Op. posth.</h3>
+        <p>Composer: Chopin</p>
+        <p>Period: Romantic</p>
+        <p>Date Composed: 1830</p>
+        <p>Arthur Rubinstein:<br><a href="https://www.youtube.com/watch?v=AauGBCVDMn0" target="_blank">https://youtu.be/AauGBCVDMn0</a></p>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>

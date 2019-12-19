@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Debussy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar(); videoID(['reverieIframe', 'sunkenCathedralIframe']);" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div class="compTitle">
+      <br><br><br><br><br><br>
+      <h1>Debussy</h1>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    <!--The main content-->
+    <div id="mainContent">
+      <p>Claude Debussy</p>
+      <p>Romantic Period</p>
+      <p>Born: August 22, 1862 in Saint-Germain-en-Laye, France</p>
+      <p>Died: March 25, 1918 in Paris, France</p>
+      <button onclick="showModal('reverieModal');">Rêverie</button>
+      <br><br>
+      <button onclick="showModal('sunkenCathedralModal');">The Sunken Cathedral</button>
+      <br><br><br><br>
+    </div>
+
+    <!--The pop up box with info-->
+    <div id="reverieModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('reverieModal');">&times;</span>
+        <h3>Rêverie</h3>
+        <p>Composer: Debussy</p>
+        <p>Period: Romantic</p>
+        <p>Date Composed: 1890</p>
+        <p>Aldo Ciccolini:</p>
+        <iframe id="reverieIframe" src="https://www.youtube.com/embed/q1k3PF8bupg?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sunkenCathedralModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sunkenCathedralModal');">&times;</span>
+        <h3>The Sunken Cathedral</h3>
+        <p>Composer: Debussy</p>
+        <p>Period: Modern</p>
+        <p>Date Composed: 1910</p>
+        <p>Arthur Rubinstein:</p>
+        <iframe id="sunkenCathedralIframe" src="https://www.youtube.com/embed/5FPSsycMzvs?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>

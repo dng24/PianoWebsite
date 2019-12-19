@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Beethoven</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/icon" sizes="16x16">
+  </head>
+
+  <body onload="generateNavBar(); videoID(['furEliseIframe', 'furEliseIframe1', 'furEliseIframe2', 'moonlightIframe', 'moonlightIframe1', 'moonlightIframe2', 'moonlightIframe3', 'moonlightIframe4', 'sonataFMiPresIframe', 'sonataFMiPresIframe1', 'sonataGMaIframe', 'sonataGMaIframe1', 'sonataGMaFIframe', 'sonataGMaFIframe1']);" onresize="resizeWindow();">
+    <!--Top Bar-->
+    <div id="topBar">
+      <span onmouseover="hovIcon();" onmouseout="unHovIcon();" onclick="clickIcon();"><a href="home.html"><img id="homeIcon" src="homeIcon.png"></a></span>
+      <span>&nbsp;</span>
+      <span id="openNav" onclick="openNavBar();">&#9776;</span>
+    </div>
+
+    <!--Side Navbar-->
+    <nav>
+      <div>
+        <span class="closeBtn" onclick="closeNavBar();">&times;</span>
+        <h2><br>Composers</h2>
+        <ul id="nav">
+        </ul>
+      </div>
+    </nav>
+
+    <!--The Titles-->
+    <div class="compTitle">
+      <br><br><br><br><br><br>
+      <h1>Beethoven</h1>
+      <br><br><br><br><br><br><br>
+    </div>
+
+    <!--The main content-->
+    <div id="mainContent">
+      <p>Ludwig van Beethoven</p>
+      <p>Classical and Romantic Periods</p>
+      <p>Born: December 16?, 1770 in Bonn, Germany</p>
+      <p>Died: March 26, 1827 in Vienna, Austria</p>
+      <button onclick="showModal('furEliseModal');">Für Elise</button>
+      <br><br>
+      <button onclick="showModal('moonlightModal');">Moonlight Sonata 3rd Movement</button>
+      <br><br>
+      <button onclick="showModal('sonataFMiPresModal');">Sonata in F Minor, Op. 2, No. 1, Prestissimo</button>
+      <br><br>
+      <button onclick="showModal('sonataGMaModal');">Sonata in G Major Op. 49, No. 2</button>
+      <br><br>
+      <button onclick="showModal('sonataGMaFModal');">Sonata in G Major Op. 79, No. 25, First Movement</button>
+      <br><br><br><br>
+    </div>
+
+    <!--The pop up box with info-->
+    <div id="furEliseModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('furEliseModal');">&times;</span>
+        <h3>Für Elise</h3>
+        <p>Composer: Beethoven</p>
+        <p>Period: Romantic</p>
+        <p>Date Composed: 1810</p>
+        <p>Derek Ng (recorded 6/12/13):</p>
+        <iframe id="furEliseIframe" src="https://www.youtube.com/embed/fXegw1O26yA?enablejsapi=1" allowfullscreen></iframe>
+        <p>Valentina Lisitsa:</p>
+        <iframe id="furEliseIframe1" src="https://www.youtube.com/embed/yAsDLGjMhFI?enablejsapi=1" allowfullscreen></iframe>
+        <p>Rousseau:</p>
+        <iframe id="furEliseIframe2" src="https://www.youtube.com/embed/wfF0zHeU3Zs?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="moonlightModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('moonlightModal');">&times;</span>
+        <h3>Moonlight Sonata 3rd Movement</h3>
+        <p>Composer: Beethoven</p>
+        <p>Period: Romantic</p>
+        <p>Date Composed: 1801</p>
+        <p>Derek Ng (recorded 6/5/19):</p>
+        <iframe id="moonlightIframe" src="https://www.youtube.com/embed/NlzFbpowjP0?enablejsapi=1" allowfullscreen></iframe>
+        <p>Derek Ng (recorded 3/27/19):</p>
+        <iframe id="moonlightIframe1" src="https://www.youtube.com/embed/gKxSmNyOOak?enablejsapi=1" allowfullscreen></iframe>
+        <p>Valentina Lisitsa:</p>
+        <iframe id="moonlightIframe2" src="https://www.youtube.com/embed/zucBfXpCA6s?enablejsapi=1" allowfullscreen></iframe>
+        <p>Rousseau:</p>
+        <iframe id="moonlightIframe3" src="https://www.youtube.com/embed/BV7RkEL6oRc?enablejsapi=1" allowfullscreen></iframe>
+        <p>Artur Schnabel:</p>
+        <iframe id="moonlightIframe4" src="https://www.youtube.com/embed/jNsUF2Ig3XY?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonataFMiPresModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonataFMiPresModal');">&times;</span>
+        <h3>Sonata in F Minor, Op. 2, No. 1, Prestissimo</h3>
+        <p>Composer: Beethoven</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1795</p>
+        <p>Derek Ng (recorded 6/14/17):</p>
+        <iframe id="sonataFMiPresIframe" src="https://www.youtube.com/embed/7ei0hToLf8o?enablejsapi=1" allowfullscreen></iframe>
+        <p>Sabrina Koseki:</p>
+        <iframe id="sonataFMiPresIframe1" src="https://www.youtube.com/embed/lhUtTqZEub0?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonataGMaModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonataGMaModal');">&times;</span>
+        <h3>Sonata in G Major Op. 49, No. 2</h3>
+        <p>Composer: Beethoven</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1795-1796</p>
+        <p>Derek Ng (recorded 6/6/14):</p>
+        <iframe id="sonataGMaIframe" src="https://www.youtube.com/embed/Vq6T-38fmE0?enablejsapi=1" allowfullscreen></iframe>
+        <p>Annie Fischer:</p>
+        <iframe id="sonataGMaIframe1" src="https://www.youtube.com/embed/2sJOACMVz6c?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="sonataGMaFModal" class="modal">
+      <div class="modalContent">
+        <span class="closeBtn" onclick="hideModal('sonataGMaFModal');">&times;</span>
+        <h3>Sonata in G Major Op. 79, No. 25, First Movement</h3>
+        <p>Composer: Beethoven</p>
+        <p>Period: Classical</p>
+        <p>Date Composed: 1809</p>
+        <p>Derek Ng (recorded 3/27/19):</p>
+        <iframe id="sonataGMaFIframe" src="https://www.youtube.com/embed/bIh07XimWhA?enablejsapi=1" allowfullscreen></iframe>
+        <p>Daniel Barenboim:</p>
+        <iframe id="sonataGMaFIframe1" src="https://www.youtube.com/embed/eJi3lTGu8QI?enablejsapi=1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      <br><br>
+      <hr>
+      <p>Email: <a href="mailto:derekjng@gmail.com" target="_top">derekjng@gmail.com</a></p>
+      <p>Hand-coded by Derek Ng</p>
+      <p>&copy; 2018-2019</p>
+      <br><br><br>
+    </footer>
+  </body>
+</html>
